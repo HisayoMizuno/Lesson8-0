@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
+
 
 class PostTableViewCell: UITableViewCell {
     
@@ -19,6 +23,8 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
     @IBOutlet weak var commentlist: UILabel! //list用ラベル
+   
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -52,17 +58,15 @@ class PostTableViewCell: UITableViewCell {
             let buttonImage = UIImage(named: "like_none")
             self.likeButton.setImage(buttonImage, for: .normal)
         }
-        //コメント表示
-        //let cmntlist = postData.comment
-        //for cmnt in cmntlist {
-            //self.commentlist.text = cmnt
-        //}
+
         let num  = postData.comment.count
-        if num != 0  || postData.comment != nil{
+        if num != 0  || postData.comment != nil {
             var cmntlists = ""
+            var accountname = postData.name
             for count in 0..<num {
-                //cmntlists =  cmntlists + postData.comment[count] + "\nLine"
                 cmntlists =  cmntlists + postData.comment[count] + "\n"
+                //cmntlists =  cmntlists + accountname! + ": " + postData.comment[count] + "\n"
+
 
             }
             self.commentlist.text = cmntlists

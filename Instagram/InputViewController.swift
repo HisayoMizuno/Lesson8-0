@@ -21,9 +21,16 @@ class InputViewController: UIViewController {
         print("DEBUG_PRINT: コメント送信がタップされました")
         print("print == \(postdata)")   //postdataの内容確認済
         
-        //let postRef = Database.database().reference().child(Const.PostPath)
+        ////let postRef = Database.database().reference().child(Const.PostPath)
+        //let postRef = Database.database().reference().child(Const.PostPath).child(postdata.id!)
+        //postdata.comment.append(commentField.text!)
+        //let comment = ["comment" : postdata.comment]
+        //postRef.updateChildValues(comment)
+        
+
         let postRef = Database.database().reference().child(Const.PostPath).child(postdata.id!)
-        postdata.comment.append(commentField.text!)
+        let text = commentField.text! + " ユーザ名＝" + (Auth.auth().currentUser?.displayName)!
+        postdata.comment.append(text)
         let comment = ["comment" : postdata.comment]
         postRef.updateChildValues(comment)
     }
