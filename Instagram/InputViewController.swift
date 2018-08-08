@@ -14,7 +14,10 @@ import FirebaseDatabase
 class InputViewController: UIViewController {
     var postdata: PostData!
    
-
+    @IBAction func commentBack(_ sender: Any) {
+        
+    }
+    
     @IBOutlet weak var commentField: UITextField!
     
     @IBAction func commentSend(_ sender: UIButton) {
