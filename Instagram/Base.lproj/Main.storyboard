@@ -148,36 +148,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPs-oT-KZp">
+                                <rect key="frame" x="16" y="30" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="&lt;戻る"/>
+                                <connections>
+                                    <action selector="commentBack:" destination="gBx-pU-UrD" eventType="touchUpInside" id="3kX-hM-Ll0"/>
+                                    <segue destination="243-wx-jWZ" kind="unwind" unwindAction="unwind:" id="Tik-C4-WUf"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="コメント" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBC-ZR-NBb">
-                                <rect key="frame" x="18" y="130" width="70" height="21"/>
+                                <rect key="frame" x="16" y="116" width="70" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="入力してください" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GJ7-e7-aqN">
-                                <rect key="frame" x="103" y="121" width="234" height="30"/>
+                                <rect key="frame" x="101" y="107" width="234" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAq-3c-KFi">
-                                <rect key="frame" x="124" y="193" width="92" height="30"/>
+                                <rect key="frame" x="122" y="179" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="コメント送信"/>
                                 <connections>
                                     <action selector="commentSend:" destination="gBx-pU-UrD" eventType="touchUpInside" id="CsJ-Ys-Tyu"/>
                                     <segue destination="243-wx-jWZ" kind="unwind" unwindAction="unwind:" id="hRp-Kh-UGp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPs-oT-KZp">
-                                <rect key="frame" x="18" y="32" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="&lt;戻る"/>
-                                <connections>
-                                    <action selector="commentBack:" destination="gBx-pU-UrD" eventType="touchUpInside" id="3kX-hM-Ll0"/>
-                                    <segue destination="243-wx-jWZ" kind="unwind" unwindAction="unwind:" id="f0V-OG-foK"/>
                                 </connections>
                             </button>
                         </subviews>
