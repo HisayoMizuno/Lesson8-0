@@ -63,10 +63,10 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="コメント履歴" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSR-sR-tRa">
-                        <rect key="frame" x="29" y="539" width="151" height="56"/>
+                        <rect key="frame" x="29" y="550" width="151" height="45"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="151" id="8Va-NY-xtv"/>
-                            <constraint firstAttribute="height" constant="56" id="msF-4Q-wzR"/>
+                            <constraint firstAttribute="height" constant="45" id="msF-4Q-wzR"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -95,7 +95,7 @@
                     <constraint firstItem="OhH-Cc-2pq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="1jX-7k-rIF"/>
                     <constraint firstAttribute="trailingMargin" secondItem="VXL-W0-b3E" secondAttribute="trailing" constant="-10" id="3Ue-eM-KSr"/>
                     <constraint firstAttribute="bottomMargin" secondItem="eWA-PI-Vvc" secondAttribute="bottom" constant="20" id="4F6-H2-0hl"/>
-                    <constraint firstItem="YSR-sR-tRa" firstAttribute="top" secondItem="p4u-a2-T72" secondAttribute="bottom" constant="27" id="4g0-6I-N0a"/>
+                    <constraint firstItem="YSR-sR-tRa" firstAttribute="top" secondItem="p4u-a2-T72" secondAttribute="bottom" constant="38" id="4g0-6I-N0a"/>
                     <constraint firstItem="26D-UG-QbA" firstAttribute="leading" secondItem="eIK-0Q-zZv" secondAttribute="trailing" constant="8" id="Fof-Fz-Jbf"/>
                     <constraint firstItem="eWA-PI-Vvc" firstAttribute="top" secondItem="YSR-sR-tRa" secondAttribute="bottom" constant="-11" id="JKA-8s-iKE"/>
                     <constraint firstItem="26D-UG-QbA" firstAttribute="leading" secondItem="eIK-0Q-zZv" secondAttribute="trailing" constant="8" symbolic="YES" id="PUk-8p-6pF"/>
